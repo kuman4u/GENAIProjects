@@ -4,7 +4,7 @@
 # streamlit run app.py
 # ------------------------------------------------------------
  
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import streamlit as st
 import os
 import re
@@ -15,7 +15,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from langchain_openai import ChatOpenAI
  
 # -------------------- Setup --------------------
-load_dotenv()  # loads OPENAI_API_KEY from .env if present
+#load_dotenv()  # loads OPENAI_API_KEY from .env if present
  
 # Support Streamlit secrets too
 OPENAI_KEY = os.getenv("OPENAI_API_KEY") or st.secrets.get("OPENAI_API_KEY", None)
